@@ -1,0 +1,445 @@
+:root {
+    --Very-Dark-Blue: #070439;
+    --Desaturated-Blue: #585989;
+    --Bright-Blue: #3065f8;
+    --Moderate-Cyan: #3c9f8f;
+    --Light-Grayish-Blue: #f6f6fe;
+    --Light-Gray: #bfbfbf;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* 400 */
+    font-family: 'Open Sans', sans-serif;
+    /* 400,700 */
+    font-family: 'Raleway', sans-serif;
+}
+
+.parent {
+    padding:0 80px;
+}
+@media (max-width:767px) {
+    .parent {
+        padding:0 20px;
+    }
+}
+/* start nav */
+.parent nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 40px;
+}
+.parent nav ul {
+    display: flex;
+    gap: 40px;
+}
+
+.parent nav ul li {
+    list-style: none;
+}
+
+.parent nav ul li a {
+    text-decoration: none;
+    color: var(--Very-Dark-Blue);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+}
+@media (max-width:767px) {
+    .parent nav img {
+        width: 100px;
+    }
+    .parent nav ul {
+        gap: 15px;
+    }
+    .parent nav ul li a {
+        font-size: 15px;
+    }
+}
+/* start header */
+.parent header {
+    display: flex;
+    margin-top: 80px;
+    align-items: center;
+}
+
+.parent header img {
+    width: 550px;
+}
+
+.parent header h1 {
+    color: var(--Very-Dark-Blue);
+    font-size: 44px;
+}
+
+.parent header p {
+    margin-top: 20px;
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+    color: var(--Very-Dark-Blue);
+}
+
+.parent header .field .f-form {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px; 
+    flex-wrap: wrap;
+}
+
+.parent header .field .email_c {
+    width: 330px;
+    height: 45px;
+    padding-left: 20px;
+    border-radius: 2px;
+    outline: none;
+    font-size: 18px;
+    border: black 1px solid;
+}
+
+.parent header .field .butt {
+    border: none;
+    height: 45px;
+    background-color: var(--Bright-Blue);
+    width: 250px;
+    color: white;
+    font-size: 16px;
+    border-radius: 2px;
+    font-weight: 700;
+
+}
+
+@media (min-width:320px) and (max-width:992px) {
+
+    .parent header {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .parent header img {
+        width: 300px;
+    }
+
+    .parent header h1 {
+        font-size: 35px;
+    }
+    .parent header .field .f-form {
+        flex-direction: column;
+    }
+    .parent header .field .f-form .butt {
+        
+        width: 330px;
+    }
+}
+/* start section */
+
+section .background_ {
+    width: 100%;
+    margin-bottom: -10px;
+}
+
+section .inside-sec {
+    padding: 0 80px 50px; 
+    background-color: var(--Light-Grayish-Blue);
+    display: flex;
+    align-items: center;
+    /* margin-bottom: 50px; */
+}
+
+section .inside-sec img.illus-2 {
+    width: 550px;
+}
+
+section .inside-sec h1 {
+    color: var(--Very-Dark-Blue);
+    font-size: 35px;
+}
+
+section .inside-sec p {
+    color: var(--Very-Dark-Blue);
+    margin-top: 15px;
+    width: 85%;
+    font-family: 'Open Sans', sans-serif;
+}
+
+section .inside-sec .texts .field {
+    margin-top: 15px;
+    position: relative;
+    width: 170px;
+}
+
+section .inside-sec .texts .field .text_ {
+    text-decoration: none;
+    background-color: var(--Light-Grayish-Blue);
+    color: var(--Moderate-Cyan);
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+}
+section .inside-sec .texts .field .text_::after {
+    content: '';
+    width: 170px;
+    height: 1px;
+    background-color: var(--Moderate-Cyan);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+section .inside-sec .texts .field a.butto img {
+    position: absolute;
+    right: 1px;
+    width: 20px;
+    bottom: 1px;
+}
+
+section .inside-sec .texts .card {
+    background-color: white;
+    width: 350px;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+section .inside-sec .texts .card p {
+    font-size: 13px;
+    color: var(--Very-Dark-Blue);
+    line-height: 1.5;
+    margin-top: 0;
+    font-weight: 700;
+}
+
+section .inside-sec .texts .card .info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+section .inside-sec .texts .card .info img {
+    width: 35px;
+    border-radius: 50%;
+}
+
+section .inside-sec .texts .card .name-work h5 {
+    font-size: 15px;
+    
+}
+
+section .inside-sec .texts .card .name-work span {
+    font-size: 12px;
+}
+
+@media (min-width:320px) and (max-width:992px) {
+
+    section {
+        margin-top: 40px;
+    }
+    section .inside-sec {
+        flex-direction: column-reverse;
+        align-items: center;
+        padding: 50px 20px 120px;
+    }
+    section .inside-sec img.illus-2 {
+        width: 300px;
+    }
+    section .inside-sec .texts h1 {
+        font-size: 18px;
+        text-align: center;
+        margin-top: 30px;
+    }
+    section .inside-sec .texts p {
+        width: 100%;
+        color: var(--Desaturated-Blue);
+    }
+    section .inside-sec .texts .field {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    section .inside-sec .texts .card {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+}
+/* start befo-footer */
+.befo-footer {
+    padding: 50px 80px;
+    background-color: var(--Desaturated-Blue);
+    
+}
+
+.befo-footer .inside-befo {
+    display: flex;
+    align-items: center;
+}
+
+.befo-footer .inside-befo .text {
+    width: 50%;
+}
+
+.befo-footer .inside-befo .text h2 {
+    color: white;
+    font-size: 28px;
+}
+
+.befo-footer .inside-befo .text p {
+    color: white;
+    margin-top: 20px;
+    font-size: 14px;
+    width: 70%;
+    line-height: 1.5;
+}
+
+.befo-footer .inside-befo .field {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.befo-footer .inside-befo .field .email_ {
+    border: none;
+    border-radius: 2px;
+    height: 40px;
+    outline: none;
+    width: 380px;
+    padding-left: 15px;
+    font-size: 14px;
+}
+
+.befo-footer .inside-befo .field .butto_ {
+    width: 190px;
+    height: 40px;
+    color: white;
+    background-color: var(--Bright-Blue);
+    border: none;
+    border-radius: 2px;
+    font-weight: 700; 
+}
+
+@media (min-width:320px) and (max-width:992px) {
+    .befo-footer {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .befo-footer .inside-befo {
+        flex-direction: column;
+    }
+    .befo-footer .inside-befo .text {
+        width: 100%;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .befo-footer .inside-befo .text p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .befo-footer .inside-befo .field {
+        margin-top: 15px;
+        gap: 10px;
+    }
+    .befo-footer .inside-befo .field .email_ {
+        
+        width: 300px;
+    }
+    
+    .befo-footer .inside-befo .field .butto_ {
+        width: 300px;
+        
+    }
+}
+
+/* start footer */
+footer {
+    padding: 80px;
+    background-color: var(--Very-Dark-Blue);
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    /* align-items: center; */
+}
+
+footer .first-col {
+    color: var(--Light-Grayish-Blue);
+}
+footer .first-col div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+footer .second-col,
+footer .third-col {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 70px;
+}
+footer .second-col a,
+footer .third-col a {
+    text-decoration: none;
+    color: var(--Light-Grayish-Blue);
+
+}
+
+footer .fourth-col {
+    color: var(--Light-Grayish-Blue);
+    margin-top: 70px;
+
+}
+
+footer .fourth-col i {
+    border: 1px solid var(--Light-Grayish-Blue);
+    padding: 5px;
+    margin-left: 10px;
+    border-radius: 50%;
+}
+
+@media (min-width:320px) and (max-width:992px) {
+    footer {
+        grid-template-columns: 1fr;
+        /* padding-left: 20px;
+        padding-right: 20px; */
+    }
+
+    footer .fourth-col {
+        text-align: center;
+    }
+    footer .second-col,
+    footer .third-col,
+    footer .fourth-col {
+        margin-top: 40px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
